@@ -17,9 +17,9 @@
       </div>
       <!-- Tabs -->
       <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
-        <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
-        <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Reference</a>
+        <a href="#fixed-tab-2" class="mdl-layout__tab">Probe</a>
+        <a href="#fixed-tab-3" class="mdl-layout__tab">Overview</a>
       </div>
     </header>
     <div class="mdl-layout__drawer">
@@ -29,7 +29,7 @@
       <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
         <div class="page-content"><!-- Your content goes here -->
           <h1>Log to file</h1>
-          <p>This page connects to an Espruino device, calls a
+          <p>This page connects to a device, calls a
             function called <code>getData()</code> (which you should
             have created previously) and then stored all data received
             in the text box below. You can click 'Save Data' to save it
@@ -38,7 +38,7 @@
           <button id="connect">Connect</button>
           Status: <span id="status"></span><br/>
           <span>Received data:</span><br/>
-          <textarea id="result" style="width:100%;height:150px">
+          <textarea id="result" style="width:50%;height:50px">
           </textarea>
           <button id="save">Save Data</button>
         </div>
