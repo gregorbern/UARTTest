@@ -35,13 +35,9 @@
             in the text box below. You can click 'Save Data' to save it
             to a file.
           </p>
-          <button id="connect">Connect</button>
-          <!-- Colored raised button -->
-          <button id="connect" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-            Connect
-          </button>
+
           <!-- Colored FAB button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+          <button id="connect" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
             <i class="material-icons">bluetooth</i>
           </button>
           <!-- Colored raised button -->
@@ -52,7 +48,10 @@
           <span>Received data:</span><br/>
           <textarea id="result" style="width:50%;height:50px">
           </textarea>
-          <button id="save">Export Data</button>
+          <!--button id="save">Export Data</button-->
+          <button id="save" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">download</i>
+          </button>
         </div>
       </section>
       <section class="mdl-layout__tab-panel" id="fixed-tab-2">
@@ -93,10 +92,15 @@
         }
         setStatus("Connected");
         connection = c;
+        // todo set bluetooth sign to green
+        connection.on('close', function() { 
+          // set the bluetooth sign to orange again when connection closes
+         });
         // Handle the data we get back, and call 'onLine'
         // whenever we get a line
         resultData = "";
         connection.on("data", function(d) {
+          // todo: adapt to fill a table with all info needed
           resultData += d;
           setStatus(resultData.length+" bytes received");
           result.value = resultData;
