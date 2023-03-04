@@ -72,9 +72,19 @@
     var resultData = "";
     var domResult = document.getElementById('result');
     var domStatus = document.getElementById('status');
+    var trackGPS = False;
     function setStatus(t) {
       domStatus.innerHTML = t;
     }
+
+    const successCallback = (position) => {
+      // GPS success callback
+      setStatus(position);
+            };
+    const errorCallback = (error) => {
+      // GPS error / no permission callback
+      etStatus((error);
+    };
 
     // When clicked, connect or disconnect
     var connection;
@@ -102,6 +112,11 @@
         connection.on("data", function(d) {
           // todo: adapt to fill a table with all info needed
           resultData += d;
+          if (trackGPS){
+            
+            navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+          }
+
           setStatus(resultData.length+" bytes received");
           result.value = resultData;
         });
