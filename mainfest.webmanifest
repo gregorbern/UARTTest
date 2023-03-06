@@ -7,7 +7,7 @@
   
     // Scope and start URL - these need to change to yours
     "scope": "/UARTTest/",
-    "start_url": "/UARTTest/test.html",
+    "start_url": "/UARTTest/",
   
     // colours of the app as displayed in the installer
     "background_color": "#ffffff",
