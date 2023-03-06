@@ -14,8 +14,8 @@ var VERSION = 'version_00';
 // others to this list
 var URLS = [    
   `${GHPATH}/`,
-  `${GHPATH}/test.html`,
-  //`${GHPATH}/index.html`,
+  //`${GHPATH}/test.html`,
+  `${GHPATH}/index.html`,
   //`${GHPATH}/css/styles.css`,
   //`${GHPATH}/js/app.js`
 ]
