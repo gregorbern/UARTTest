@@ -6,12 +6,5 @@
     "start_url": "/UARTTest/",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
-    "display": "standalone", 
-    "icons": [
-        {
-          "src": "/UARTTest/img/reflectlogo.png",
-          "type": "image/png",
-          "sizes": "216x233"
-        }
-    ]
+    "display": "standalone"
   }
