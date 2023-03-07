@@ -4,7 +4,4 @@
     "description": "Github Page as a Progressive Web App",
     "scope": "/UARTTest/",
     "start_url": "/UARTTest/",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
-    "display": "standalone"
   }
