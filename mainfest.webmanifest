@@ -3,5 +3,5 @@
     "short_name": "pflexpwa",
     "description": "Github Page as a Progressive Web App",
     "scope": "/UARTTest/",
-    "start_url": "/UARTTest/",
+    "start_url": "/UARTTest/"
   }
